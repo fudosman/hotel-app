@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <!-- <div>
+      <button id="addNewTaskButton" type="button" onclick="fetch_continental()">continental dishes</button> <br>
+      <button id="addNewTaskButton" type="button" onclick="fetch_hotSpicy()">hot and spicy dishes</button><br>
+      <button id="addNewTaskButton" type="button" onclick="fetch_otherSelections()">other selections</button><br>
+      <button id="addNewTaskButton" type="button" onclick="fetch_pastries()">pastries</button><br>
+      <button id="addNewTaskButton" type="button" onclick="fetch_specialBreakfast()">special breakfast</button>
+    </div> -->
+
+    <!-- the ordering app -->
+    <div class="nav">
+      <button type="button" > BAR </button>
+      <button type="button" class="kitchen" > KITCHEN </button>
+      <button type="button" > GRILL / SHAWARMA  </button>
+      <button type="button" > SHISHA </button>
+      <button type="button" > HOME SERVICE </button>
+      <button type="button" > STORE </button>
+      <button type="button" > GYM </button>
+      <button type="button" > SWIMMING POOL </button>
+      <button type="button" id="lastNav" disabled>  </button>
+    </div>
+    <div class="panel">
+      <div class="verticalNav">
+          <div class="app_icons"></div>
+          <div class="app_icons"></div>
+          <div class="app_icons"></div>
+          <div class="app_icons"></div>
+          <div class="app_icons"></div>
+          <div class="app_icons"></div>
+      </div>
+      <div class="orderPanel">
+        <div class="itemsAndPrice master">
+          <button id="fetch_continental" type="button" onclick="fetch_continental()" class="itemsAndPrice master">CONTINENTAL STARTER</button>
+        </div>
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+
+        <div class="itemsAndPrice master">
+          <button id="fetch_hotSpicy" type="button" onclick="fetch_hotSpicy()" class="itemsAndPrice master">SPECIAL BREAKFAST</button>
+        </div>
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+
+        <div class="itemsAndPrice master">
+          <button id="fetch_localDishes" type="button" onclick="fetch_localDishes()" class="itemsAndPrice master">LOCAL DISHES</button>
+        </div>
+
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+
+        <div class="itemsAndPrice master">
+          <button  id="fetch_otherSelections" type="button" onclick="fetch_otherSelections()" class="itemsAndPrice master">OTHER SELECTIONS</button>
+        </div>
+
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+
+        <div class="itemsAndPrice master">
+          <button id="fetch_pastries" type="button" onclick="fetch_pastries()" class="itemsAndPrice master">PASTERY BUGGER</button>
+        </div>
+
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+
+        <div class="itemsAndPrice master">
+          <button id="fetch_specialBreakfast" type="button" onclick="fetch_specialBreakfast()" class="itemsAndPrice master">HOT AND SPICY</button>
+        </div>
+
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+        <button type="button" class="itemsAndPrice assistants"></button>
+
+      </div>
+      <div class="display">
+        <div class="first_display"></div>
+        <div class="second_display"></div>
+        <div class="third_display"></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer_icons">w</div>
+      <div class="footer_icons">w</div>
+      <div class="footer_icons">w</div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
